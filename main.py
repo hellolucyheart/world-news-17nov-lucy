@@ -3,7 +3,7 @@
 
 Entry for make.fun's "Sum up 17 November's world news in one image" bounty.
 
-The deliverable is a single editorial poster (poster.png, built alongside
+The deliverable is a single editorial poster (poster.jpg, built alongside
 this file by compose_poster.py) that compresses the five biggest stories of
 Tuesday, 17 November 2026 into one frame:
 
@@ -38,23 +38,23 @@ import sys
 import zlib
 from pathlib import Path
 
-POSTER_NAME = "poster.png"
+POSTER_NAME = "poster.jpg"
 OUTPUT_NAMES = ("entry.png",)
 
 HEADLINES = (
     "SHENZHEN SUMMIT - TRUMP, XI & PUTIN MEET",
     "KERCH BRIDGE STRUCK - SPAN COLLAPSES",
-    "HORMUZ TANKER ABLAZE - U.S. STRIKES IRAN",
+    "HORMUZ TANKER FIRE - U.S. STRIKES IRAN",
     "AI CHIP CURBS TIGHTEN - STOCKS SLIDE",
     "U.S. LOSES MEASLES-FREE STATUS",
 )
 
 
 def fallback_png() -> bytes:
-    """A tiny valid PNG, used only if poster.png were missing.
+    """A tiny valid PNG, used only if poster.jpg were missing.
 
     Keeps the run completing with a real image in the output directory
-    instead of failing; the shipped repository always carries poster.png,
+    instead of failing; the shipped repository always carries poster.jpg,
     so this path is a safety net, never the graded artefact.
     """
 
