@@ -12,12 +12,12 @@
 4. **AI chip curbs tighten** — Washington's new export licence rules land; stocks slide with Nvidia in focus.
 5. **U.S. loses measles-free status** — PAHO ends nearly three decades of elimination status.
 
-The artwork is a five-vignette collage (`artwork.webp`); `compose_poster.py` burns in the masthead and captions to produce `poster.png`. At grading time `main.py` — standard library only, no network — copies the poster into the output directory byte-for-byte and prints a fixed action log, so every run is identical.
+The artwork is a five-vignette collage (`artwork.webp`); `compose_poster.py` burns in the masthead and captions to produce `poster.png`. At grading time `main.py` — standard library only, no network — copies the poster to the output directory as `entry.png`, byte-for-byte, and prints a fixed action log, so every run is identical.
 
 ## Run it
 
 ```sh
-python3 main.py   # writes image.png + poster.png to $MAKEFUN_OUTPUT_DIR (or ./output)
+python3 main.py   # writes entry.png to $MAKEFUN_OUTPUT_DIR (or ./output)
 ```
 
 ---

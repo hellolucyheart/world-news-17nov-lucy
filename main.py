@@ -25,9 +25,10 @@ Tuesday, 17 November 2026 into one frame:
 
 Run contract (the grader's program/v1 sandbox): no network, repository
 read-only, an empty writable output directory named by MAKEFUN_OUTPUT_DIR.
-This program copies the poster into that directory byte-for-byte and prints
-a fixed action log, so two runs on the same repository produce identical
-output and an identical log. Standard library only.
+The competition's one deliverable is a single image at /output/entry.png:
+this program copies the poster there byte-for-byte and prints a fixed
+action log, so two runs on the same repository produce identical output
+and an identical log. Standard library only.
 """
 
 import hashlib
@@ -38,7 +39,7 @@ import zlib
 from pathlib import Path
 
 POSTER_NAME = "poster.png"
-OUTPUT_NAMES = ("image.png", "poster.png")
+OUTPUT_NAMES = ("entry.png",)
 
 HEADLINES = (
     "SHENZHEN SUMMIT - TRUMP, XI & PUTIN MEET",
